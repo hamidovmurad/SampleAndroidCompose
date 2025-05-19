@@ -4,6 +4,7 @@ plugins {
 
     alias(libs.plugins.hilt)
     kotlin("kapt")
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -77,7 +78,6 @@ dependencies {
 
     implementation(libs.retrofit)
     implementation(libs.retrofit.converter.gson)
-
     implementation(libs.okhttp)
     implementation(libs.okhttp.logging.interceptor)
 
